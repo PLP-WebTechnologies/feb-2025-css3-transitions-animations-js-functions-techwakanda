@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Preferences & Animations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Preferences</h1>
+        
+        <div class="preference-panel">
+            <h2>Theme Settings</h2>
+            
+            <div class="preference-item">
+                <label for="theme-selector">Color Theme:</label>
+                <select id="theme-selector">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                    <option value="colorful">Colorful</option>
+                </select>
+            </div>
+            
+            <div class="preference-item">
+                <label for="font-size">Font Size:</label>
+                <input type="range" id="font-size" min="12" max="24" value="16">
+                <span id="font-size-value">16px</span>
+            </div>
+            
+            <div class="preference-item">
+                <label>Animation Speed:</label>
+                <div class="button-group">
+                    <button class="speed-btn" data-speed="slow">Slow</button>
+                    <button class="speed-btn active" data-speed="medium">Medium</button>
+                    <button class="speed-btn" data-speed="fast">Fast</button>
+                </div>
+            </div>
+            
+            <button id="save-preferences" class="pulse-button">Save Preferences</button>
+        </div>
+        
+        <div class="animation-demo">
+            <h2>Animation Demo</h2>
+            <div class="animation-container">
+                <div class="animated-element"></div>
+            </div>
+            <button id="trigger-animation">Trigger Animation</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
